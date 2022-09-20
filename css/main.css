@@ -131,8 +131,17 @@ a:hover{
     text-align: center;
 }
 
-.docenten{
+.docenten-text{
     display: flex;
     justify-content: space-around;
     font-family: 'Arial';
+}
+
+.docenten-images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.docenten-images img{
+    width: 70px;
 }

@@ -77,10 +77,21 @@
                 <p class="toptext3">Smoelenboek</p>
                 <?php 
 
-                $docenten = array ('Elton', 'Ine', 'Corné', 'Michel' , 'Joost', 'Tim');
+                $docenten = array ('Elton', 'Ine', 'Corne', 'Michel' , 'Joost', 'Tim');
                 $random = array_rand($docenten, 4);?>
+
+                <div class="docenten-images">
+                        
+                        <img src="img/<?php echo $docenten[$random[0]];?>.png">
+                        <img src="img/<?php echo $docenten[$random[1]];?>.png">
+                        <img src="img/<?php echo $docenten[$random[2]];?>.png">
+                        <img src="img/<?php echo $docenten[$random[3]];?>.png">
+
+                    
+                </div>
                 
-                <div class="docenten">
+                <div class="docenten-text">
+                    
                     <p><?php echo $docenten[$random[0]];?></p>
                     <p><?php echo $docenten[$random[1]];?></p>
                     <p><?php echo $docenten[$random[2]];?></p>
