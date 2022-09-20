@@ -1,0 +1,137 @@
+header{
+    background-color: lightgray;
+}
+
+
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+body{
+    background-image: url('../img/software_devlopers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+nav img{
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+
+.large{
+    border: 1px solid black;
+    background-color:rgba(255, 255, 235, 0.9);
+    grid-column: span 4;
+
+}
+
+.small{
+    border: 1px solid black;
+    background-color:rgba(255, 255, 235, 0.9);
+    grid-column: span 2;
+   
+  }
+
+.grid{
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1%; 
+}
+
+.toptext{
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Arial';
+    text-shadow: 1px 1px 0px gray;
+}
+
+.toptext2{
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Arial';
+    text-shadow: 1px 1px 0px gray;
+    text-align: center;
+}
+
+h1{
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.main-text{
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.main-text2{
+    font-family: Arial;
+    font-size: 15px;
+}
+
+ul{
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.small img{
+    width: 100%;
+}
+
+.red{
+    color: red;
+}
+
+.orange{
+    color: orange;
+}
+
+.green{
+    color: green;
+}
+
+
+a:hover{
+    color: lightyellow;
+    border: 3px solid gray;
+    border: 3px solid transparent;
+  }
+
+.welcome{
+    border: 1px solid black;
+    background-color:rgba(255, 246, 246, 0.9);
+    grid-column: span 4;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.large2{
+    border: 1px solid black;
+    background-color:rgba(255, 255, 235, 0.9);
+    grid-column: span 6;
+}
+
+.toptext3{
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Arial';
+    text-shadow: 1px 1px 0px gray;
+    text-align: center;
+}
+
+.docenten{
+    display: flex;
+    justify-content: space-around;
+}
