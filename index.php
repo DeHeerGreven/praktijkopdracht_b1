@@ -20,7 +20,72 @@
         <div class="welcome">
             <p class="toptext2">Welkom!</p>
             <p class="main-text2">Welkom bij de opleiding Software developer! Digitaal is jouw lievelingstaal. Na Nederlands schrijf jij het beste C#, PHP, MYSQL en Javascript. Of misschien nu nog niet zo goed, maar na de opleiding Softwaredeveloper wel. Je leert programmeren. Apps bouwen. Websites maken. En software ontwikkelen die speciaal voor de wens van de klant is bedoeld. Je houdt van werken in teams en leert graag meer over ontwikkelprogramma’s.</p>
+            <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/locatie-curio-terheijdenseweg-350-2.jpg" style="width: 100%">
+                
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/software_developer.png" style="width: 100%">
+                
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/thumb_softwaredeveloper.png" style="width: 100%">
+
+
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    }
+                </script>
+                
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
+
+
 
         <div class="grid">                
             <div class="large">
@@ -63,9 +128,9 @@
 
             <div class="large">
             <p class="toptext">Blokken</p>
-                <p class="main-text">Deze opleiding is verdeeld onder 8 blokken. Ieder schooljaar heb je twee blokken. In het eerste jaar krijg
-                    je dus te maken Blok A en Blok B. Aan het einde van ieder blok is er een eindtoets. Die toets is om te kijken of je stof van het
-                afgelopen blok goed begrijpt. Na de toets is krijg je een bepaald overgangsadvies. Die wordt niet alleen bepaald door de toets maar ook hoe je je gedraagt, of je je best doet en je op tijd en aanwezig bent.  Die zijn onderverdeelt in drie dingen:</p>
+                <p class="main-text">Deze opleiding is verdeeld onder 8 blokken. Ieder schooljaar heeft twee blokken. Als je een 4-jarige opleiding doet, werk je van Blok A t/m G. Als je een versneller bent (een 3-jarige opleiding ) sla je blok E over. In blok G ga je stage lopen.  
+                    Aan het einde van ieder blok is er een eindtoets. Die toets is om te kijken of je de stof van het
+                afgelopen blok goed begrijpt. Na de toets krijg je een overgangsadvies. Die wordt niet alleen bepaald door de toets maar ook hoe je je gedraagt, of je je best doet en of je op tijd en aanwezig bent. De adviezen zijn onderverdeelt in drie kleuren:</p>
                 <ul>
                     <li><span class="red">Rood</span><p>Als je de stof niet goed hebt begrepen krijg je rood. Je bent ook veel te vaak te laat gekomen en zelden aanwezig. Hierdoor moet je het hele blok opnieuw gaan doen. </p></li>
                     <li><span class="orange">Oranje</span><p>Als je stof nog niet helemaal goed begrijpt of je bent redelijk op tijd of best vaak afwezig krijg je oranje. Je gaat wel over maar wel met bepaalde afspraken. Als je aan die afspraken houdt krijg je groen.</p></li>
